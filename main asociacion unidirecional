@@ -1,0 +1,12 @@
+    public static void main(String[] args) {
+        
+        Persona persona;
+        Usuario usuario;
+        persona = new Persona("Eduard", "pulido", 123123);
+        usuario = new Usuario("edu", "edu123");
+        persona.setUsuario(usuario);
+        
+        System.out.println(persona);
+    }
+    
+}
