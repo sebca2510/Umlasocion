@@ -1,0 +1,57 @@
+public class Persona {
+    private String nombre;
+    private String apellido;
+    private long documento;
+    private Usuario usuario;
+
+    public Persona(String nombre, String apellido, long documento) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.documento = documento;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public long getDocumento() {
+        return documento;
+    }
+
+    public void setDocumento(long documento) {
+        this.documento = documento;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Persona{");
+        sb.append("nombre= ").append(nombre);
+        sb.append(", apellido= ").append(apellido);
+        sb.append(", documento= ").append(documento);
+        sb.append(", usuario= ").append(usuario);
+        sb.append('}');
+        return sb.toString();
+    }
+    
+}
