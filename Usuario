@@ -1,0 +1,38 @@
+public class Usuario {
+    
+    private String user;
+    private String contrasena;
+
+    public Usuario(String user, String contrasena) {
+        this.user = user;
+        this.contrasena = contrasena;
+    }
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    public String getContrasena() {
+        return contrasena;
+    }
+
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Usuario{");
+        sb.append("user= ").append(user);
+        sb.append(", contrasena= ").append(contrasena);
+        sb.append('}');
+        return sb.toString();
+    }
+    
+    
+}
